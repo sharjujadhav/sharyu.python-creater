@@ -1,7 +1,11 @@
 46.Implement matrix addition and subtraction.
 
-import numpy as np 
-arr = np.arange(16).reshape(4,4)
-print("origanal matrix:\n",arr,"\n")
-res = arr[np.ix_([0,3],[0,3])]
-print("created submatrix:\n",res,"\n")
+import numpy as np
+a = np.array([[1, 2], [3, 4]])
+b = np.array([[4, 5], [6, 7]])
+print(" printing elements of first matrix")
+print(a)
+print(" printing element of second matrix")
+print("addition of two matrix")
+print(np.add(a, b))
+
