@@ -1,10 +1,7 @@
 47.Extract a submatrix from a larger matrix.
+import numpy as np 
+arr = np.arange(16).reshape(4,4)
+print("origanal matrix:\n",arr,"\n")
+res = arr[np.ix_([0,3],[0,3])]
+print("created submatrix:\n",res,"\n")
 
-
-import numpy as np
-from numpy import linalg
-matrix = np.array([[1, 0],[3, 6]])
-print("original 2-d mattrix")
-print(matrix)
-print("determinant of the 2-d matrix:")
-print(np. linalg.det(matrix))
